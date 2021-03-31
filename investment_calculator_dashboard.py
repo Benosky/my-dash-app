@@ -17,6 +17,7 @@ df['colors'] = "turquoise"
 print(df.head()[['date','bpi','number']])
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 app.layout = dbc.Container([
     dbc.Row([
